@@ -1,0 +1,47 @@
+{% extends "aplicacion/index.html" %}
+
+
+{% block titulo %}
+<h1 class="mb-5 fw-bolder text-white">Productos</h1>
+{% endblock titulo %}
+
+
+{% block contenido %}
+    
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for p in producto_list  %}
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.precio }}</td>
+            <td>{{ p.descripcion }}</td>
+            <td>
+                <a
+                  href="{% url 'producto_update' p.id %}"
+                  class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-edit fa-sm" title="Editar"></i>
+                </a>
+                <a
+                  href="{% url 'producto_delete' p.id %}"
+                  class="btn btn-danger"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-trash fa-sm" title="Eliminar"></i>
+                </a>                
+            </td>      
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock contenido %}

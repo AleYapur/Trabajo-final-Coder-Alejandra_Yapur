@@ -1,0 +1,40 @@
+{% extends "aplicacion/index.html" %}
+
+
+           
+            {% block titulo %}                                      
+            <h1 class="display-4 fw-bolder text-white">Dale vida a tus espacios</h1>
+            {% endblock titulo %}    
+
+
+
+
+{% block contenido %}
+{% load static %}  
+<!-- filosofía -->
+<section id = "about" class = "py-5">
+    <div class = "container">
+        <div class = "row gy-lg-5 align-items-center">
+            <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                
+                <p class = "lead text-muted"><p>No hay nada más placentero que entrar a un lugar y sentir que transmite vitalidad y energía. Esto puede lograrse con un presupuesto muy bajo y con un solo recurso: plantas.
+                    Está comprobado que decorar con plantas no solo aporta calidez a tus espacios, sino que tiene otros beneficios:</p>
+                    <p><strong>1. Psicológicos:</strong> diversos estudios revelan que las plantas reducen los niveles de estrés, ansiedad y depresión.</p>
+                    <p><strong>2. Cognitivos:</strong> mejoran tu capacidad de concentración y memoria y, por ende, tu desempeño.</p>
+                    <p><strong>3. Más oxígeno:</strong> tener plantas de interior mejora la calidad del oxígeno en espacios cerrados.</p>
+                    <p>No quiero sobrecargarlos con información, así que solo voy a agregar un último beneficio: son sustentables. A diferencia de las flores (tema aparte, ¿por qué comprarías algo que ya está muerto?), las plantas pueden durarte para siempre y tienen un impacto positivo en el medioambiente.
+                        Una vez que hayas elegido las plantas, puedes usar tu creatividad para presentarlas. En internet, encontrarás muchos recursos e ideas que te ayudarán a reutilizar latas, tazas viejas, canastos… las posibilidades son innumerables.
+                        Pero no es necesario empezar con muchas plantas, puedes comenzar con una. Acostumbrarte a cuidarla y aprender a relajarte mientras lo haces. No te frustres si se te muere una planta, eso sucede generalmente cuando no tuviste en cuenta la iluminación a la hora de elegirla.</p>
+                        <p>Es verdad que tener plantas requiere ciertos cuidados, pero te aseguro que el resultado es muy gratificante. Haz la prueba y verás que es un camino de ida.</p>    
+                
+            </div>
+            <div class = "col-lg-6 order-lg-0">
+                <img src = "{% static 'assets/images/Livingroom.jpg' %}" alt = "Livingroom con plantas" class = "img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- fin filosofía -->         
+
+{% endblock contenido %}
+

@@ -1,0 +1,17 @@
+{% extends "aplicacion/index.html" %}
+
+
+{% block titulo %}
+<h1 class="mb-5 fw-bolder text-white">Buscar planta</h1>
+{% endblock titulo %}
+
+
+{% block contenido %}
+
+<form action="{% url 'encontrar_productos' %}" method="get">
+    {% csrf_token %}
+    <p>Nombre: <input type="text" name="buscar" id="buscar"></p>
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock contenido %}

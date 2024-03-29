@@ -1,0 +1,57 @@
+{% extends "aplicacion/index.html" %}
+
+
+           
+            {% block titulo %}                                      
+            <h1 class="display-4 fw-bolder text-white">Acerca de mí</h1>
+            {% endblock titulo %}
+
+        
+
+
+
+
+{% block contenido %}
+{% load static %}    
+<!-- acerca de mí -->
+<section id = "about" class = "py-5">
+    <div class = "container">
+        <div class = "row gy-lg-5 align-items-center">
+            <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                
+                <p class = "lead text-muted">¡Bienvenid@ a mi proyecto final de Python!</p>
+
+
+                    <p>Me llamo Alejandra, soy traductora y, por algún motivo loco, hace unos años decidí empezar a aprender diferentes herramientas tecnológicas nuevas. Antes de largarme a aprender programación, decidí tomar un curso avanzado de Excel y después el de análisis de datos, ambos en Coderhouse. Aprendí a usar las bases de datos con SQL y adquirí los principios básicos para el análisis de datos. Comprender cómo manipular y gestionar datos de manera eficiente ha abierto nuevas oportunidades y perspectivas en mi viaje de aprendizaje.
+                        
+                        <p>Durante este curso, aprendí a manejarme un poco con Python. Comenzando desde los conceptos básicos del lenguaje hasta explorar temas más avanzados como la Programación Orientada a Objetos y el desarrollo web con Django. Ahora puedo usar git y github (que aparecen en todos lados).</p>
+                    
+                    <p>Una de las cosas que más me costaron fue aprender a aplicar la lógica de programación para abordar los problemas. Como alguien que no proviene del mundo de la tecnología, inicialmente encontré desafiante entender y aplicar los principios fundamentales de la programación. Sin embargo, después de muchos desaciertos y algo de esmero, he logrado avanzar un poco con el tema.
+                    
+                    
+                                      
+                    
+                    <p>Viendo este proyecto tomar forma, me doy cuenta de todo lo que aprendí (y de todo lo que me falta). Obvio, mientras lo codeaba, me dieron ganas de abrirme una tienda de plantas. Por otro lado, también puso en práctica mi paciencia.</p>
+                    
+                    
+                    Mi idea es seguir explorando las posibilidades que ofrece Python, especialmente en el campo del Procesamiento del Lenguaje Natural. Ya había tomado unos cursos que aplican procesamiento de datos con Python, pero no entendía mucho. Ahora siento que tengo una mejor base. 
+                    
+                    
+                    En resumen, fueron tres meses intensos, pero me dí cuenta que se puede aprender, es cuestión de ponerle horas e intentar no frustrarse. La verdad, me entusiasma mucho poder seguir aprendiendo.
+                    
+                    
+                    ¡Gracias por acompañarme en esta aventura!
+                    
+                    </p>
+            
+            </div>
+            <div class = "col-lg-6 order-lg-0">
+                <img src = "{% static 'assets/images/about.jpg' %}" alt = "" class = "img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- fin acerca de mí -->         
+
+
+{% endblock contenido %}
